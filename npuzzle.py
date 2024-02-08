@@ -1,5 +1,5 @@
 import sys
-import numpy as np
+import time
 
 #making sure that the path to file containing the puzzle is provided
 inputs_count = len(sys.argv)
@@ -191,7 +191,9 @@ class Puzzle:
 
       current_state = self.open[0]
      
+      #goal state is found
       if self.h_score(current_state) == 0:
+        #retrace the path from goal state to inital state using the parents
         state = current_state.copy()
         self.solution.append(state)
         while state.parent is not None:
@@ -199,18 +201,24 @@ class Puzzle:
           self.solution.append(state.copy())
         break
 
+      #remove current state from the list that serves as a prioriry queue
       del self.open[0]
+
+      #add the state to the list of closed states
       self.closed.append(current_state)
 
-      new_states = current_state.generate_next_states()
-        
+      #generate all the possible children from the current state
+      new_states = current_state.generate_next_states() 
       for state in new_states:
+        #do nothing if the state is already in the closed list
         if self.find_state(state, self.closed) is not None:
           continue
 
+        #add to open list for future expansion as state not found in the closed list 
         if self.find_state(state, self.open) is None:
           self.open.append(state)
         else:
+          #makes sure that the found state is closest to the optimal path
           found_state = self.find_state(state, self.open)
           if state.depth >= found_state.depth:
             continue
@@ -218,6 +226,7 @@ class Puzzle:
         state.f_score = self.f_score(state)
         state.parent = current_state
       
+      #sort the open list to make sure that the state with the smallest f_score is at the beginning of the list
       from functools import cmp_to_key
       self.open.sort(key=cmp_to_key(self.comparator), reverse=False)
 
@@ -228,7 +237,12 @@ goal_state = generate_goal_state(maze)
 
 #generating the Puzzle
 game = Puzzle(maze, goal_state)
+
+start_time = time.time()
+
 game.solve_with_A_star()
+
+end_time = time.time()
 
 print("start state: ")
 init_state = State(maze, 0, 0)
@@ -248,3 +262,5 @@ for i in range(len(game.solution)):
 
 print("Number of moves to reach goal state: ", end="")
 print(len(game.solution)-1, "moves\n")
+print("Number of states in closed list: ", len(game.closed))
+print("Time to reach goal state: ", end_time - start_time, " seconds")
