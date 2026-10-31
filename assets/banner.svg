@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE5EC"/><stop offset="0.55" stop-color="#F3E8FF"/><stop offset="1" stop-color="#E0F4FF"/></linearGradient></defs>
+<rect width="1200" height="340" rx="26" fill="url(#bg)"/>
+<circle cx="70" cy="50" r="6" fill="#FF8FAB" opacity="0.8"/>
+<circle cx="560" cy="40" r="5" fill="#FFB703" opacity="0.8"/>
+<circle cx="640" cy="300" r="7" fill="#8ECAE6" opacity="0.8"/>
+<circle cx="1150" cy="60" r="6" fill="#90E0B0" opacity="0.8"/>
+<circle cx="780" cy="270" r="4" fill="#CDB4DB" opacity="0.8"/>
+<circle cx="40" cy="290" r="5" fill="#A0C4FF" opacity="0.8"/>
+<circle cx="1160" cy="300" r="5" fill="#FFB703" opacity="0.8"/>
+<text x="70" y="140" font-size="62" font-weight="900" fill="#2D2A4A">N-Puzzle Solver</text>
+<text x="72" y="190" font-size="26" fill="#5B5680">Sliding-tile puzzles, solved with A* search</text>
+<rect x="72" y="222" width="126" height="40" rx="20" fill="#FF8FAB"/><text x="135" y="248" text-anchor="middle" font-size="18" font-weight="700" fill="#2D2A4A">A* Search</text>
+<rect x="209.5" y="222" width="240" height="40" rx="20" fill="#8ECAE6"/><text x="330" y="248" text-anchor="middle" font-size="18" font-weight="700" fill="#2D2A4A">Manhattan heuristic</text>
+<rect x="462.0" y="222" width="114" height="40" rx="20" fill="#90E0B0"/><text x="519" y="248" text-anchor="middle" font-size="18" font-weight="700" fill="#2D2A4A">Python 3</text>
+<g>
+<rect x="860" y="43" width="254" height="254" rx="21.6" fill="#2D2A4A"/>
+<g id="b-1"><animateTransform attributeName="transform" type="translate" values="0 0;0 0;78 0;78 0;0 0" keyTimes="0;0.35;0.5;0.85;1" dur="4s" repeatCount="indefinite"/><rect x="874" y="57" width="70" height="70" rx="15.4" fill="#FF8FAB"/><rect x="874" y="111.6" width="70" height="15.4" rx="15.4" fill="#000" opacity="0.08"/><text x="909.0" y="103.5" text-anchor="middle" font-size="32" font-weight="800" fill="#2D2A4A">1</text></g>
+<rect x="952" y="57" width="70" height="70" rx="15.4" fill="none" stroke="#6E6A92" stroke-width="2" stroke-dasharray="4 4"/>
+<g id="b-2"><rect x="1030" y="57" width="70" height="70" rx="15.4" fill="#FFB703"/><rect x="1030" y="111.6" width="70" height="15.4" rx="15.4" fill="#000" opacity="0.08"/><text x="1065.0" y="103.5" text-anchor="middle" font-size="32" font-weight="800" fill="#2D2A4A">2</text></g>
+<g id="b-3"><rect x="874" y="135" width="70" height="70" rx="15.4" fill="#8ECAE6"/><rect x="874" y="189.6" width="70" height="15.4" rx="15.4" fill="#000" opacity="0.08"/><text x="909.0" y="181.5" text-anchor="middle" font-size="32" font-weight="800" fill="#2D2A4A">3</text></g>
+<g id="b-4"><rect x="952" y="135" width="70" height="70" rx="15.4" fill="#90E0B0"/><rect x="952" y="189.6" width="70" height="15.4" rx="15.4" fill="#000" opacity="0.08"/><text x="987.0" y="181.5" text-anchor="middle" font-size="32" font-weight="800" fill="#2D2A4A">4</text></g>
+<g id="b-5"><rect x="1030" y="135" width="70" height="70" rx="15.4" fill="#CDB4DB"/><rect x="1030" y="189.6" width="70" height="15.4" rx="15.4" fill="#000" opacity="0.08"/><text x="1065.0" y="181.5" text-anchor="middle" font-size="32" font-weight="800" fill="#2D2A4A">5</text></g>
+<g id="b-6"><rect x="874" y="213" width="70" height="70" rx="15.4" fill="#FFC8A2"/><rect x="874" y="267.6" width="70" height="15.4" rx="15.4" fill="#000" opacity="0.08"/><text x="909.0" y="259.5" text-anchor="middle" font-size="32" font-weight="800" fill="#2D2A4A">6</text></g>
+<g id="b-7"><rect x="952" y="213" width="70" height="70" rx="15.4" fill="#A0C4FF"/><rect x="952" y="267.6" width="70" height="15.4" rx="15.4" fill="#000" opacity="0.08"/><text x="987.0" y="259.5" text-anchor="middle" font-size="32" font-weight="800" fill="#2D2A4A">7</text></g>
+<g id="b-8"><rect x="1030" y="213" width="70" height="70" rx="15.4" fill="#F4A261"/><rect x="1030" y="267.6" width="70" height="15.4" rx="15.4" fill="#000" opacity="0.08"/><text x="1065.0" y="259.5" text-anchor="middle" font-size="32" font-weight="800" fill="#2D2A4A">8</text></g>
+</g>
+<text x="987" y="322" text-anchor="middle" font-size="16" fill="#5B5680">one move from solved ✨</text>
+</svg>
